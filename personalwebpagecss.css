@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Page size = 1024x768*/
+/*TODO: 
+	- Make webpage have adaptable width and height --> remove the hardcoded width and height tags
+	
+*/
+
+body 
+{
+	background:url(Assets/backgroundV2.png);
+}
+
+/*deals with major titles*/
+h1
+{
+	text-align:left;
+	padding:10px;
+	color:#FFF;
+}
+
+/*webpage minor titles*/
+h2
+{
+	text-align:left;
+	padding:10px;
+	color:#CCC;
+}
+
+/*footer text*/
+p1 
+{
+	color:#FFF;
+	
+}
+/*end foot text*/
+
+p
+{
+	color:#FFF;
+	padding:10px;	
+}
+
+p2
+{
+	color:#FFF;
+	padding:2px;
+}
+
+a
+{
+	text-align:center;
+	color:#CFF;	
+}
+
+a:visted
+{
+	color:#FCF;
+}
+
+div#menubar
+{
+	/*height:100px;*/
+	padding:30px;
+	/*border:dashed;
+	border-width:thin;*/
+	text-align:center;
+	background:url(Assets/MenuBarBackgroundV2.png);
+}
+
+/*div -> id="menubar" -> > (a element of the div tag)*/
+div#menubar > a
+{
+	border:thin;
+	border-color:#CCC;
+	font-size:20px;
+	border-radius:3px;
+	padding:15px;
+	background:url(Assets/ButtonUnclickedBackgroundV3.png);
+	color:#FFF; /*text color*/
+	margin-right:8px; /*space between buttons*/
+	text-decoration:none; /*no underlines*/
+	transition:background 0.5s linear 0s, color 0.5s linear 0s; /*edits background, color && 0s is delay*/
+}
+
+div#menubar > a:hover
+{
+	
+	/*highlight background*/
+	background:url(Assets/ButtonOnHoverBackgroundV2.png);
+	/*highlight text color*/
+	color:#F00;
+}
+
+div#menubar > a:link:active
+{
+	background:url(Assets/ButtonClickedBackgroundV2.png);
+	color:#390;	
+}
+
+#header
+{
+	/*width:768px;*/
+	height:150px;
+	background:url(Assets/HeaderV2.png);
+}
+
+#parentbody
+{
+	display:table;
+	min-height:500px;
+	/*border:dashed thin;*/
+}
+
+#childbody
+{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+#bodytext
+{
+	float:left;	
+	width:1024px;
+}
+
+#contactform
+{
+	ruby-align:center;
+}
+
+/*<p> tag styles*/
+#homepage
+{
+	width:1024px;
+	text-align:left;
+}
+
+#homepage_intro
+{
+	width:1024px;
+	text-align:center;
+}
+
+#courseworkpage
+{
+	width:1024px;
+}
+
+#bodycentered
+{
+	width:1024px;
+	text-align:center;
+}
+
+#hobbiespage
+{
+	width:1024px;	
+}
+
+
+#artworkpage
+{
+	width:1024px;
+	text-align:center;
+}
+
+#gamingpage
+{
+	width:1024px;	
+}
+/*end <p> tag styles*/
+
+#footer
+{	
+	clear:left;
+	text-align:center;
+	background:#000;
+}
+
+#formstyle
+{
+	display:inline-block;
+	padding:15px;
+	width:auto;
+}
+
+#gallerypicturetop
+{
+	float:right; 
+	margin-left:15px; 
+	margin-right:10px; 
+	float:left; 
+	padding:5px;	
+}
+
+#artworkimgs
+{
+	padding:4px;
+}
+
+/*slightly pushed towards center of page*/
+#gallerypicbotLeft
+{
+	float:left; 
+	position:relative; 
+	right:-40px;
+	padding-top:7px; 
+	padding-left:15px;
+	padding-bottom:15px;
+}
+
+#gallerypicbotRight
+{
+	float:right; 
+	position:relative; 
+	left:-40px;
+	padding-top:7px; 
+	padding-right:15px;
+	padding-bottom:15px;	
+}
+
+/*to be added to the default align position*/
+#gallerypicbot
+{
+	padding:20px;
+	position:absolute;
+	right:20px;
+}
+
+/*VERTICAL ALIGNMENT TESTS*/
+#parent
+{
+	display:table;
+	height:100px;
+	border:dashed thin;
+}
+
+#child
+{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+/*TESTS END*/
